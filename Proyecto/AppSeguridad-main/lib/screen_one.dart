@@ -7,63 +7,93 @@ class ScreenOne extends StatelessWidget {
     Option(
       title: 'Nivel 1',
       imageUrl: 'https://i.imgur.com/heQYdSP.png',
-      description: """La ciberseguridad es como un escudo que protege nuestras computadoras, tabletas y teléfonos de los peligros que existen en internet. Estos peligros pueden ser virus que dañan nuestras máquinas o personas que quieren robar nuestra información personal, como contraseñas o fotos. Es importante aprender a cuidar nuestra seguridad en línea para usar internet de forma divertida y segura.""",
-        VideoURL: 'https://www.youtube.com/watch?v=VzlsG3e5W5s'
+      imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: """Nunca publiques tu nombre, dirección, teléfono o escuela en internet sin pedir permiso a un adulto. Alguien malo podría usar esa información para encontrarte o engañarte. Si no estás seguro, siempre pregunta a tus papás o maestros.""",
+        VideoURL: 'https://www.youtube.com/watch?v=VzlsG3e5W5s',
+      question: "¿Nunca debes compartir tu nombre, dirección o teléfono en internet sin pedir permiso a un adulto?",
+      isAnswerCorrect: true
 
     ),
     Option(
       title: 'Nivel 2',
         imageUrl: 'https://i.imgur.com/xKElSsF.png',
-        description: 'Una contraseña segura es como una llave mágica que solo tú puedes usar para entrar a tus cuentas. Para que nadie pueda adivinarla, debe ser larga y combinar letras, números y símbolos, como "JuguetesFavoritos!123". Nunca compartas tu contraseña con amigos o desconocidos, y si alguien te pide una contraseña, siempre cuéntaselo a un adulto de confianza.',
-      VideoURL: 'https://www.youtube.com/watch?v=boQKl5BkPfs'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+      description:"""Aunque alguien parezca amable en internet, no siempre es quien dice ser. Nunca aceptes solicitudes de amistad de personas que no conoces en la vida real. Si alguien extraño intenta hablar contigo, avísale a un adulto.""",
+        VideoURL: 'https://www.youtube.com/watch?v=boQKl5BkPfs',
+        question: "¿Es seguro aceptar solicitudes de amistad de personas que no conoces en la vida real?",
+        isAnswerCorrect: false
     ),
     Option(
       title: 'Nivel 3',
         imageUrl: 'https://i.imgur.com/8Maoerg.png',
-        description: 'En internet, a veces recibimos mensajes o solicitudes de personas que no conocemos. Hablar con desconocidos en línea es peligroso porque no siempre sabemos quiénes son en realidad. Podrían mentir sobre quiénes son o intentar engañarte. Si alguien que no conoces te envía mensajes, no respondas y cuéntaselo a tus padres o maestros.',
-        VideoURL: 'https://www.youtube.com/watch?v=i_92-NovRT0'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Si alguien te dice cosas feas o te molesta en internet, eso es ciberacoso. No respondas a esos mensajes y avísale a un adulto para que te ayude a solucionarlo. Recuerda: no estás solo y siempre habrá alguien para ayudarte.',
+        VideoURL: 'https://www.youtube.com/watch?v=i_92-NovRT0',
+        question: "¿Si alguien te molesta en internet, siempre es ciberacoso.?",
+        isAnswerCorrect: true
     ),
     Option(
       title: 'Nivel 4',
         imageUrl: 'https://i.imgur.com/LetKatR.png',
-        description: 'A veces, cuando navegamos en internet o revisamos correos electrónicos, encontramos enlaces que prometen cosas increíbles, como premios o regalos. Estos enlaces pueden ser trampas diseñadas para infectar tu dispositivo con virus o robar tu información. Antes de hacer clic en un enlace, pregúntate: ¿conozco a la persona que lo envió? ¿Es un sitio seguro? Si no estás seguro, mejor no lo abras y pide ayuda a un adulto.',
-        VideoURL: 'https://www.youtube.com/watch?v=0BdVhw-maQE'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Todo lo que haces en internet deja un rastro, como las publicaciones, comentarios o fotos que subes. Este rastro se llama huella digital y puede quedarse ahí para siempre. ¡Piensa antes de publicar!',
+        VideoURL: 'https://www.youtube.com/watch?v=0BdVhw-maQE',
+        question: "¿Lo que publicas en internet puede desaparecer para siempre una vez que lo elimines?",
+        isAnswerCorrect: false
     ),
     Option(
         title: 'Nivel 5',
         imageUrl: 'https://i.imgur.com/6FrDrlb.png',
-        description: 'Un virus informático es como un microbio que enferma a las computadoras, teléfonos o tabletas. Los virus pueden borrar archivos, hacer que tu dispositivo funcione lento o robar información importante. Los virus entran a los dispositivos a través de correos sospechosos, enlaces peligrosos o descargas de programas no confiables. Por eso, debemos tener cuidado con lo que descargamos o abrimos en internet.',
-        VideoURL: 'https://www.youtube.com/watch?v=0BdVhw-maQE  '
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Los videojuegos en línea son muy divertidos, pero nunca compartas información como tu nombre o dirección con otros jugadores. Usa un apodo en lugar de tu nombre real y juega con amigos que conoces',
+        VideoURL: 'https://www.youtube.com/watch?v=0BdVhw-maQE  ',
+        question: "¿Es seguro compartir tu nombre real y dirección con otros jugadores online si te caen bien?",
+        isAnswerCorrect: false
     ),
     Option(
         title: 'Nivel 6',
         imageUrl: 'https://i.imgur.com/37wdft2.png',
-        description: 'Tu información personal incluye cosas como tu nombre completo, dirección, escuela, fotos y número de teléfono. Compartir esta información en internet puede ser peligroso porque alguien podría usarla para hacerte daño o engañarte. Nunca publiques tus datos personales en redes sociales, juegos o aplicaciones sin permiso de tus padres..',
-        VideoURL: 'https://www.youtube.com/watch?v=WLjhHn5wHPY'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Si ves un anuncio que promete premios o dinero gratis, ¡ten cuidado! Puede ser un truco para robarte información. Nunca hagas clic en algo que no conoces y siempre pregunta a un adulto',
+        VideoURL: 'https://www.youtube.com/watch?v=WLjhHn5wHPY',
+        question: "¿Si ves un anuncio que promete dinero gratis, es seguro hacer clic en él?",
+        isAnswerCorrect: false
     ),
     Option(
         title: 'Nivel 7',
         imageUrl: 'https://i.imgur.com/JwChNir.png',
-        description: 'Hoy en día hay muchas aplicaciones y juegos divertidos, pero no todos son seguros. Algunos juegos o apps pueden contener virus o pedirte datos personales que no deberías compartir. Antes de descargar una aplicación, verifica que sea de una tienda oficial, como Google Play o App Store, y lee las opiniones de otros usuarios. Pide a tus padres que revisen contigo si una app es segura antes de instalarla.',
-        VideoURL: 'https://www.youtube.com/watch?v=ZHfNaCuVzkg'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Antes de subir una foto a internet, pregúntate si es segura y si te gustaría que todos la vieran. Recuerda que lo que subes a internet puede quedarse ahí para siempre.',
+        VideoURL: 'https://www.youtube.com/watch?v=ZHfNaCuVzkg',
+        question: "¿Puedes subir cualquier foto a internet sin preocuparte, ya que solo tú puedes verla?",
+        isAnswerCorrect: false
     ),
     Option(
         title: 'Nivel 8',
         imageUrl: 'https://i.imgur.com/kICc78U.png',
-        description: 'Un hacker es alguien que sabe mucho sobre computadoras. Hay dos tipos: los "hackers malos", que usan sus conocimientos para robar información o causar daño, y los "hackers buenos" o éticos, que trabajan para proteger a las personas en internet. Los hackers buenos ayudan a encontrar problemas en los sistemas y arreglarlos antes de que alguien los use para hacer daño.',
-        VideoURL: 'https://www.youtube.com/watch?v=IHzVfwfvfRs'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Tu contraseña es como la llave de tu casa: ¡debe ser secreta! Nunca la compartas con amigos y asegúrate de que sea difícil de adivinar. Pídele ayuda a un adulto para crearla.',
+        VideoURL: 'https://www.youtube.com/watch?v=IHzVfwfvfRs',
+        question: "¿Es seguro compartir tu contraseña con tus amigos cercanos?",
+        isAnswerCorrect: false
     ),
     Option(
         title: 'Nivel 9',
         imageUrl: 'https://i.imgur.com/1keda8F.png',
-        description: 'El ciberacoso ocurre cuando alguien usa internet para hacerte sentir mal, como enviarte mensajes hirientes, compartir fotos tuyas sin permiso o burlarse de ti en público. Si esto te sucede, no respondas al acosador y cuéntaselo a un adulto de confianza. Guarda pruebas, como capturas de pantalla, y recuerda que no estás solo; siempre hay personas dispuestas a ayudarte.',
-        VideoURL: 'https://www.youtube.com/watch?v=E235oRqubv4'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'Si alguien te envía mensajes extraños o algo en internet te hace sentir incómodo, cuéntaselo a un adulto de confianza. No tengas miedo, ellos están ahí para ayudarte',
+        VideoURL: 'https://www.youtube.com/watch?v=E235oRqubv4',
+        question: "¿Si algo en internet te hace sentir incómodo, es importante contarle a un adulto de confianza.?",
+        isAnswerCorrect: true
     ),
     Option(
         title: 'Nivel 10',
         imageUrl: 'https://i.imgur.com/qIJQ30L.png',
-        description: 'Ser un ciudadano digital responsable significa usar internet de manera respetuosa y segura. Esto incluye tratar a los demás con amabilidad, no compartir cosas falsas o dañinas y cuidar lo que publicas. Piensa antes de escribir o compartir algo: ¿es verdad? ¿es necesario? ¿es respetuoso? Recuerda que lo que haces en internet puede afectar a otras personas, así que siempre sé amable y cuida tus acciones en línea.',
-        VideoURL: 'https://www.youtube.com/watch?v=dcYgA1qHBpM'
+        imageNivel: "https://educacioncontinua.ucuenca.edu.ec/wp-content/uploads/2021/11/ciberseguridad-tec-de-monterrey.jpg",
+        description: 'En internet hay información verdadera y falsa. Si lees algo extraño, verifica con un adulto o busca en otras páginas para asegurarte de que es correcto',
+        VideoURL: 'https://www.youtube.com/watch?v=dcYgA1qHBpM',
+        question: "¿Toda la información en internet es 100% confiable?",
+        isAnswerCorrect: false
     ),
   ];
 
@@ -93,10 +123,27 @@ class ScreenOne extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DetailScreen(option: option),
+                  showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                      title: Text("Pregunta"),
+                      content: Text(option.question),  // Mostrar la pregunta
+                      actions: [
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                            _navigateToDetailScreen(context, option, option.isAnswerCorrect == true);  // Respuesta Verdadera
+                          },
+                          child: Text("Verdadero"),
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.pop(context);
+                            _navigateToDetailScreen(context, option, option.isAnswerCorrect == false);  // Respuesta Falsa
+                          },
+                          child: Text("Falso"),
+                        ),
+                      ],
                     ),
                   );
                 },
@@ -108,4 +155,16 @@ class ScreenOne extends StatelessWidget {
     );
   }
 
+  // Método de navegación a la pantalla de detalles con el resultado de la respuesta
+  void _navigateToDetailScreen(BuildContext context, Option option, bool isCorrect) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => DetailScreen(
+          option: option,
+          isCorrect: isCorrect,  // Pasar si la respuesta fue correcta o incorrecta
+        ),
+      ),
+    );
+  }
 }

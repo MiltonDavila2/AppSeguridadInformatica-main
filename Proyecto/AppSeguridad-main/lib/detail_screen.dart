@@ -4,8 +4,9 @@ import 'option.dart';
 
 class DetailScreen extends StatefulWidget {
   final Option option;
+  final bool isCorrect;
 
-  const DetailScreen({Key? key, required this.option}) : super(key: key);
+  const DetailScreen({Key? key, required this.option, required this.isCorrect}) : super(key: key);
 
   @override
   _DetailScreenState createState() => _DetailScreenState();
@@ -18,9 +19,7 @@ class _DetailScreenState extends State<DetailScreen> {
   void initState() {
     super.initState();
 
-
     final videoId = YoutubePlayer.convertUrlToId(widget.option.VideoURL)!;
-
 
     _controller = YoutubePlayerController(
       initialVideoId: videoId,
@@ -39,16 +38,15 @@ class _DetailScreenState extends State<DetailScreen> {
   }
 
   @override
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black, //
+      backgroundColor: Colors.black,
       appBar: AppBar(
         title: Text(
           "Volver",
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.black, //
+        backgroundColor: Colors.black,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -56,7 +54,20 @@ class _DetailScreenState extends State<DetailScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              // Mostrar si la respuesta fue correcta o incorrecta encima del título
+              Center(
+                child: Text(
+                  widget.isCorrect ? "¡Respuesta Correcta!" : "Respuesta Incorrecta",
+                  style: TextStyle(
+                    fontSize: 22,
+                    color: widget.isCorrect ? Colors.green : Colors.red,
+                  ),
+                  textAlign: TextAlign.center,  // Asegúrate de que el texto se alinee al centro
+                ),
+              ),
+              SizedBox(height: 16),
 
+              // Título
               Text(
                 widget.option.title,
                 style: TextStyle(
@@ -68,17 +79,15 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               SizedBox(height: 16),
 
-
               Center(
                 child: Image.network(
-                  widget.option.imageUrl,
+                  widget.option.imageNivel,
                   height: 200,
                   width: double.infinity,
                   fit: BoxFit.cover,
                 ),
               ),
               SizedBox(height: 16),
-
 
               Text(
                 widget.option.description,
@@ -89,7 +98,6 @@ class _DetailScreenState extends State<DetailScreen> {
               ),
               SizedBox(height: 24),
 
-
               Text(
                 'Video relacionado',
                 style: TextStyle(
@@ -99,7 +107,6 @@ class _DetailScreenState extends State<DetailScreen> {
                 ),
               ),
               SizedBox(height: 16),
-
 
               YoutubePlayerBuilder(
                 player: YoutubePlayer(
@@ -113,13 +120,11 @@ class _DetailScreenState extends State<DetailScreen> {
                 builder: (context, player) {
                   return Column(
                     children: [
-
                       AspectRatio(
                         aspectRatio: 16 / 9,
                         child: player,
                       ),
                       SizedBox(height: 24),
-
 
                       ElevatedButton(
                         onPressed: () {
@@ -146,5 +151,4 @@ class _DetailScreenState extends State<DetailScreen> {
       ),
     );
   }
-
 }
